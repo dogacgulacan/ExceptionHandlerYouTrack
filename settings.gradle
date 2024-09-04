@@ -1,0 +1,8 @@
+rootProject.name = 'ExceptionHandlerYouTrack-addon'
+
+include 'exceptionhandleryoutrack'
+include 'exceptionhandleryoutrack-starter'
+
+rootProject.children.each { p1 ->
+    p1.buildFileName = "${p1.name}.gradle"
+}
